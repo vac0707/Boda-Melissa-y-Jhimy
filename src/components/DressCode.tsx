@@ -55,17 +55,22 @@ export default function DressCode() {
           transition={{ duration: 1.2, delay: 0.1 }}
           className="w-full text-center flex flex-col items-center"
         >
+          {/* Etiquette Tag */}
+          <span className="font-sans text-[11px] sm:text-xs uppercase tracking-[0.3em] text-[#c5a059] font-bold mb-2">
+            {t("dress_code.etiquette", "Etiqueta")}
+          </span>
+
           {/* Header Title */}
-          <h3 className="font-great-vibes text-6xl sm:text-7.5xl text-[#1B365D] tracking-wide mb-3 select-none leading-none">
-            {t("dress.title")}
+          <h3 className="font-great-vibes text-5xl sm:text-7xl text-[#1B365D] tracking-wide mb-3 select-none leading-none">
+            {t("dress_code.title", "Código de Vestimenta")}
           </h3>
 
           {/* Subheading */}
-          <span className="font-serif text-[15px] sm:text-[17px] text-[#c5a059] font-bold uppercase tracking-[0.2em] text-center max-w-sm px-4 leading-snug">
-            {t("dress.subtitle")}
+          <span className="font-serif text-[13px] sm:text-[15px] text-[#1B365D] font-bold uppercase tracking-[0.2em] text-center max-w-sm px-4 leading-snug">
+            {lang === "es" ? "Formal / Elegante" : "Formal / Elegant Attire"}
           </span>
 
-          <div className="w-12 h-[0.5px] bg-[#dfb559]/40 mx-auto mt-6 mb-6" />
+          <div className="w-12 h-[0.5px] bg-[#dfb559]/40 mx-auto mt-5 mb-5" />
 
           {/* Body description */}
           <div className="space-y-3 font-serif text-[15px] sm:text-[16.5px] text-[#1B365D]/80 font-medium tracking-wide max-w-lg mx-auto leading-relaxed">
